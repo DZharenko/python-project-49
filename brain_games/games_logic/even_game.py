@@ -1,23 +1,6 @@
-from random import randint
-
-import prompt
+from brain_games.game_engine import welcome_user, attempt, get_random_number, question_answer, check_correct
 
 game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
-attempt = 3
-
-
-def welcome_user():
-
-    print('"Welcome to the Brain Games!"')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\n{game_rules}')
-    return name
-
-
-def get_random_number(begin=1, end=100):
-
-    number = randint(begin, end)
-    return number
 
 
 def is_even(number):
@@ -28,33 +11,16 @@ def is_even(number):
         return 'no'
 
 
-def question(number):
-
-    print(f'Question: {number}')
-
-
-def answer():
-
-    answer = prompt.string('Your answer: ')
-    return answer
-
-
 def start_game():
 
-    name = welcome_user()
+    name = welcome_user(game_rules)
     
     for _ in range(attempt):
         number = get_random_number()
-        question(number)
-        user_answer = answer()
+        user_answer = question_answer(number)
         correct_answer = is_even(number)
-
-        if user_answer == correct_answer:
-            print('Correct')
-        else:
-            print(f'\'{user_answer}\' is wrong answer ;(.' 
-                  f'Correct answer was \'{correct_answer}\'.\n'
-                f'Let\'s try again, {name}]!')
-            exit()
+        check_correct(user_answer, correct_answer, name)
     
     print(f'Congratulations, {name}')
+
+start_game()
