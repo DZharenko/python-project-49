@@ -1,7 +1,14 @@
-from brain_games.game_engine import welcome_user, attempt, get_random_number, question_answer, check_correct, choose_operand
-
+from brain_games.game_engine import (
+    attempt,
+    check_correct,
+    choose_operand,
+    get_random_number,
+    question_answer,
+    welcome_user,
+)
 
 game_rules = 'What is the result of the expression?'
+
 
 def calcualte_expression(expression):
     result = eval(expression)

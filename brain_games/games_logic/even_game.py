@@ -1,4 +1,10 @@
-from brain_games.game_engine import welcome_user, attempt, get_random_number, question_answer, check_correct
+from brain_games.game_engine import (
+    attempt,
+    check_correct,
+    get_random_number,
+    question_answer,
+    welcome_user,
+)
 
 game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
@@ -22,5 +28,3 @@ def start_game():
         check_correct(user_answer, correct_answer, name)
     
     print(f'Congratulations, {name}')
-
-start_game()

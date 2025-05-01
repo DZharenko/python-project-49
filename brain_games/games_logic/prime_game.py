@@ -1,10 +1,16 @@
-from brain_games.game_engine import welcome_user, attempt, get_random_number, question_answer, check_correct
+from brain_games.game_engine import (
+    attempt,
+    check_correct,
+    get_random_number,
+    question_answer,
+    welcome_user,
+)
 
 game_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    if number <2: 
+    if number < 2: 
         return 'no'
     divider = 2
 

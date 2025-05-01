@@ -1,8 +1,9 @@
-import prompt
-
 from random import randint
 
+import prompt
+
 attempt = 3
+
 
 def welcome_user(game_rules):
 
@@ -17,9 +18,10 @@ def get_random_number(begin=1, end=100):
     number = randint(begin, end)
     return number
 
+
 def choose_operand():
     list_of_operand = ['+', '-', '*']
-    operand = list_of_operand[get_random_number(0, len(list_of_operand)-1)]
+    operand = list_of_operand[get_random_number(0, len(list_of_operand) - 1)]
     return operand
 
 
@@ -33,7 +35,7 @@ def question_answer(question):
 def check_correct(user_answer, correct_answer, name):
         
     if user_answer == correct_answer:
-        print ('Correct')
+        print('Correct')
     else: 
         print(f'\'{user_answer}\' is wrong answer ;(.' 
                   f'Correct answer was \'{correct_answer}\'.\n'

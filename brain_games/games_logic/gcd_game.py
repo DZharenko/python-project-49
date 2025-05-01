@@ -1,7 +1,12 @@
-from brain_games.game_engine import welcome_user, attempt, get_random_number, question_answer, check_correct
-
 import math
 
+from brain_games.game_engine import (
+    attempt,
+    check_correct,
+    get_random_number,
+    question_answer,
+    welcome_user,
+)
 
 game_rules = 'Find the greatest common divisor of given numbers.'
 
