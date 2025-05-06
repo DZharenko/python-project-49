@@ -39,6 +39,6 @@ def check_correct(user_answer, correct_answer, name):
     else: 
         print(f'\'{user_answer}\' is wrong answer ;(.' 
                   f'Correct answer was \'{correct_answer}\'.\n'
-                f'Let\'s try again, {name}]!')
+                f'Let\'s try again, {name}!')
         exit() 
 
