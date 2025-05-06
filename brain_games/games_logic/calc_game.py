@@ -28,4 +28,4 @@ def start_game():
         correct_answer = calcualte_expression(expression)
         check_correct(int(user_answer), correct_answer, name)
     
-    print(f'Congratulations, {name}')   
+    print(f'Congratulations, {name}!')   

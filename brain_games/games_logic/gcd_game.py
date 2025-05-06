@@ -28,4 +28,4 @@ def start_game():
         correct_answer = find_gcd(number_1, number_2)
         check_correct(int(user_answer), correct_answer, name)
     
-    print(f'Congratulations, {name}')   
+    print(f'Congratulations, {name}!')   

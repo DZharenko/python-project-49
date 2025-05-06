@@ -27,4 +27,4 @@ def start_game():
         correct_answer = is_even(number)
         check_correct(user_answer, correct_answer, name)
     
-    print(f'Congratulations, {name}')
+    print(f'Congratulations, {name}!')
