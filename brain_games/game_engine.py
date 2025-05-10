@@ -15,7 +15,7 @@ def welcome_user(game_rules):
 
 def get_random_number(begin=1, end=100):
 
-    number = randint(begin, end)
+    number = randint(begin, end) #//NOSONAR
     return number
 
 
