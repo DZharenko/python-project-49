@@ -17,7 +17,7 @@ def make_progression():
     hidden_elem = get_random_number(0, length - 1)
 
     progeression = list(range(first_number, 
-                              first_number + step * length - 1,
+                              first_number + step * length,
                               step))
     
     hidden_number = progeression[hidden_elem]
